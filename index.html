@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" href="app.css" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        
+        <h2>REGISTRATION FORM</h2>
+        <div class="form-wrapper">
+            <form class="myForm">
+                <div class="form-item">
+                    <label for="fullname">FULL NAME:</label>
+                    <input type="text"  id="fullname" placeholder="Full Name" required>
+                </div>
+                <div class="form-item">
+                    <label for="email">E-MAIL:</label>
+                    <input type="email" name="email" id="email" placeholder="email@abc.com" required>
+                </div>
+
+                <div class="form-item">
+                    <label for="phonenumber">Mobile:</label>
+                    <input type="tel" name="phonenumber" id="phonenumber" placeholder="XXX XXX XXXX" required>
+                </div>
+                
+                <div class="form-item">
+                    <label for="gender">GENDER:</label>
+                    <div class="genders">
+                        <p>MALE</p> <input type="radio" name="gender" id="gender" value="male">
+                        <p>FEMALE</p> <input type="radio" name="gender" id="gender" value="female">
+                        <p>OTHER</p> <input type="radio" name="gender" id="gender" value="other">
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label for="skills">SKILLS:</label>
+                    <div class="skills">
+                        <p>HTML</p> <input type="checkbox" name="skill" id="skill" value="HTML">
+                        <p>CSS</p> <input type="checkbox" name="skill" id="skill" value="CSS">
+                        <p>JS</p> <input type="checkbox" name="skill" id="skill" value="JS">
+                    </div>
+                </div>               
+
+                <button class="register" id="submit" onclick="onFormSubmit()" type="submit">REGISTER</button>
+                <button class="clear" id="clear" onclick="resetForm()">CLEAR</button>
+            </form>
+        </div>
+
+    </div>
+    <h2 align="center">APPLIED STUDENTS</h2>
+<div class="table-wrapper">
+    <table class="show">
+        <thead>
+        <tr>
+            <th>FULL NAME</th>
+            <th>EMAIL</th>
+            <th>MOBILE</th>
+            <th>GENDER</th>
+            <th>SKILLS</th>
+        </tr>
+        </thead>
+        <tbody>
+        
+        <tbody>
+    </table>
+</div>
+<script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
